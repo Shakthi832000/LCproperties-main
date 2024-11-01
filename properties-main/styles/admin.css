@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#welcome-admin {
+    background: linear-gradient(rgba(18, 17, 18, 0.3), rgba(26, 25, 25, 0.3)), url('../images/admin-page.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.custom-sell {
+    background-color: red;
+}
+
+.log-out-btn {
+    background-color: rgb(230, 147, 51) !important;
+    box-shadow: none !important
+}
+.log-out-btn:hover {
+    background-color: rgb(255, 255, 255) !important;
+    color:rgb(230, 147, 51);
+}
+
+.navbar-custom {
+    background-color: rgb(100,90,82);
+} 
+
+.welcome {
+    position: absolute !important;
+    top: 110px !important;
+}
+
+
+/* Sytsem */
+
+
+body > table {
+    width: 80%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table.list {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(219, 11, 11);
+}
+
+tr:nth-child(even), table.list thead > tr {
+    background-color: #ddd;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-btns {
+    text-align: right;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.system-table {
+    position: relative !important;
+    top: 110px !important;
+}
+
+#system {
+    min-height: 100vh;
+    background: linear-gradient(rgba(18, 17, 18, 0.3), rgba(26, 25, 25, 0.3)), url('../images/office4.jpg') no-repeat center center/cover;
+}
+
+#table-bg {
+    background-color: rgba(210, 210, 210, 0.801);
+    border-radius: 20px;
+    width: 80%;
+}
+
+.btn-Custom {
+    width: 80px;
+    background-color: rgb(230, 147, 51);
+    color: rgb(10, 10, 10);
+    border: .5px solid rgb(59, 58, 58);
+    border-radius: 5px;
+}
+
+.btn-Custom:hover {
+    box-shadow: 3px 3px 3px rgb(110, 109, 109);
+    background-color: red;
+    color: white;
+}

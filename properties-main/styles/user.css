@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: sans-serif;
+    
+}
+
+/* html {
+  overflow: hidden;
+} */
+
+#home {
+    background: linear-gradient(rgba(18, 17, 18, 0.3), rgba(26, 25, 25, 0.3)), url('../images/small_house_with_key_home.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.properties-section {
+    background-color: rgba(68, 90, 189, 0.842);
+    min-height: 100vh;
+}
+
+.custom-cards {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    
+}
+
+.row-div {
+  display: grid;
+  grid-template-columns: repeat(3, 223px);
+  gap: 0px;
+  justify-content: center;
+  width: 95%;
+}
+
+.log-out-btn {
+    background-color: rgb(230, 147, 51) !important;
+    box-shadow: none !important
+}
+.log-out-btn:hover {
+    background-color: rgb(104, 101, 98) !important;
+    color:rgb(230, 147, 51);
+}
+
+.navbar-custom {
+    background-color: rgb(100,90,82);
+} 
+
+.myCards {
+  display: grid;
+  grid-template-columns: repeat(3, 223px);
+  gap: 0px;
+  justify-content: center;
+  width: 95%;
+}
+
+.custom-sell:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1000px) {
+    .myCards {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .myCards {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .row-div {
+      grid-template-columns: repeat(2, 223px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .row-div {
+      grid-template-columns: repeat(1, 223px);
+    }
+  }
+  
+  .custom-sell {
+    border: 2px solid #212529;
+    border-radius: 4px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .user-welcome {
+    position: absolute !important;
+    top: 110px !important;
+}
+
+#toogle-btn {
+    background-color: rgb(230, 147, 51) !important;
+    color: rgb(240, 239, 237) !important;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.toggler-icon-custom {
+    color: rgb(245, 243, 241) !important;
+    position: relative;
+    top: 5px;
+}
+
+.about-section {
+  background-color: rgba(68, 90, 189, 0.842);
+}
+
+#agents-section {
+  background-color: rgb(152, 121, 103);
+}
+
+  /* .card-1 {
+    position: relative;
+    top: 100px;
+  } */

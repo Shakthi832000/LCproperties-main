@@ -1,0 +1,164 @@
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu'); */
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg {
+    background: linear-gradient(rgba(26, 25, 26, 0.3), rgba(26, 25, 25, 0.5)), url('../images/blurry_loading_img.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: auto;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: rgb(241, 17, 17);
+}
+
+/* Login Style */
+
+.box {
+    width: 280px;
+    padding: 30px;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(23, 22, 22, 0.808);
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.box input[type="text"], .box input[type="password"], #usertype {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid rgb(44, 44, 187);
+    padding: 14px 35px;
+    width: 220px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+}
+
+#usertype *:nth-child(1)
+{
+ color: rgb(0, 0, 0);
+ background-color: rgb(255, 255, 255);
+ text-align: start;
+}
+#usertype *:nth-child(2)
+{
+ color: rgb(0, 0, 0);
+ background-color: rgb(230, 147, 51);
+ text-align: start;
+}
+#usertype *:nth-child(3)
+{
+ color: rgb(0, 0, 0);
+ background-color: rgb(49, 215, 96);
+ text-align: sta
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 230px;
+    background-color: rgb(212, 148, 28);
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:hover {
+    box-shadow: 3px 3px 3px 3px rgb(175,169,177);
+    cursor: text;
+}
+
+#usertype:hover {
+    box-shadow: 3px 3px 3px 3px rgb(175,169,177);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(255, 255, 255);
+  }
+
+.box input[type="button"]{
+    background: transparent;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid rgb(212, 148, 28);
+    padding: 14px 10px;
+    width: 100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.box input[type="button"]:hover {
+    background: rgb(212, 148, 28);
+}
+
+.box input[type=" button"]:hover {
+    background-color: rgb(212, 148, 28);
+}
+
+.login-details {
+    width: 280px;
+    padding: 30px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.808);
+    color: black;
+    position: absolute;
+    border: 1px solid red;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.login-details:hover {
+    box-shadow: 3px 3px 3px 3px rgb(175,169,177);
+}
+
+.login-details h5 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li {
+    list-style: square;
+}
+
+.user-word {
+    color: rgb(47, 99, 255);
+}
+
+.admin-word {
+    color: rgb(247, 100, 26);
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <!-- CSS custom style -->
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+
+    <section class="bg">
+       <form class="box">
+
+        <h1>Login</h1>
+        <select id="usertype"  class="form-control" required>
+            <option value="select-type" disabled selected>Select User Type</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        <input type="text" name="" placeholder="Enter username" id="username" class="form-control" required>
+        <input type="password" name="" placeholder="Enter password" id="password" class="form-control" required>
+        <input type="button" name="" value="Login" onclick="validate()">
+        <a href="./user.html" ></a>
+       </form>
+       <div id="container">
+            <div class="login-details">
+                <div class="user-login">
+                    <h5>Log in as user:</h5>
+                    <ul>
+                        <li>User type: <span class="user-word">user</span></li>
+                        <li>Username: <span class="user-word">user</span></li>
+                        <li>Password: <span class="user-word">user</span></li>
+                    </ul>
+                </div>
+                <div class="admin-login">
+                    <h5>Login as admin:</h5>
+                    <ul>
+                        <li>User type: <span class="admin-word">admin</span></li>
+                        <li>Username: <span class="admin-word">admin</span></li>
+                        <li>Password: <span class="admin-word">admin</span></li>
+                    </ul>
+                </div>
+            </div>
+       </div> 
+    </section>
+
+    <script src="./scripts/index.js"></script> 
+</body>
+</html>
